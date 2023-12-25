@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    color: #e5c80a;
+}
+
+header {
+    background-color: black;
+    min-height: 5vh;
+    border-bottom: 2px solid black;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 10vh;
+}
+
+img {
+    height: 200%;
+} 
+
+.img1{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+#wrapper {
+    background-color: #000000;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    padding-top: 15vh;
+    padding-bottom: 10%;
+}
+
+label, input {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+button {
+    padding: 14px;
+    background-color: #e5c80a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+nav {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+nav .mainMenu li a:hover {
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+nav .openMenu {
+        display: block;
+    }
+
+nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+
+.icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}

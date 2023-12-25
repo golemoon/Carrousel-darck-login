@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+header{
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: black;
+    min-height: 5vh;
+    max-height: 10vh;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 10vh 0;
+}
+
+.titre{
+    color: #69727b;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    animation: caca 5s ease-in-out infinite;
+    -webkit-text-stroke: #000 1px ;
+}
+
+
+.série1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-left: 7vh;
+    min-height: 40vh;
+
+}
+
+.série2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    min-height: 40vh;
+
+}
+
+.série3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    min-height: 40vh;
+}
+
+.ecriture{
+    display: flex;
+    justify-content: center;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    letter-spacing: 3px;
+}
+
+.prix{
+    color: #69727b;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    letter-spacing: 3px;
+}
+
+.img1{
+    margin: 1vh;
+    width: 60vh;
+    background-color: #ececec;
+    min-height: 5vh;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.centre{
+    display: flex;
+}
+
+.img1:hover{
+    transform: scale(0.90);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+nav {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+nav .mainMenu li a:hover {
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+nav .openMenu {
+        display: block;
+    }
+
+nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+
+.icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+.information1 { 
+    margin-left: 6vh;
+}
+
+.information2 {
+    margin-left: 1vh;
+}
+
+.float1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.float2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.float3 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1450px) {
+    .centre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .série1 {
+        margin-left: 0vh;
+    }
+
+    .information1 { 
+        margin-left: 0vh;
+    }
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}

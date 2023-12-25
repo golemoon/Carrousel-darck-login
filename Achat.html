@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d3a9f97c9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/Achat.css">
+    <title>Document</title>
+</head>
+<body>
+  <header class="tete">
+    <nav>
+      <div class="logo"><h1><a href="Login.html">FROST</a></h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li><a href="Caroussel.html">TEAM</a></li>
+            <li><a href="#">LIVRAISON</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-instagram"></i>
+            </span>
+        </ul>
+    </nav>
+</header>
+
+    <main class="centre">
+        <section class="titre"> 
+            <h4> ACHETER VOTRE ARTICLE </h4>
+        </section>
+        <div class="série1">
+            <img src="img/teeshirt.png">
+            <div class="espace">
+                <p class="vente"> LIQUIDE CHROME 2.0 TEE - BLACK </p>
+                - Short sleeve T-shirt<br>
+                - 100% cotton<br>
+                - Liquid Chrome 2.0 graphic on chest & back<br>
+                - Machine wash cold<br>
+                
+                
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="92SNPBMZARLRU" />
+                    <table>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on0" value="Taille"/>
+                          Taille
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os0">
+                            <option value="S">
+                              S
+                            </option>
+                            <option value="M">
+                              M
+                            </option>
+                            <option value="L">
+                              L
+                            </option>
+                            <option value="XL">
+                              XL
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" src="https://www.paypalobjects.com/fr_FR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal, votre réflexe sécurité pour payer en ligne." alt="Acheter" />
+                  </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>DELIVERY & RETURNS +</h2>
+            </div>
+            <div class="footer-section contact">
+                <h2>CUSTOMER CARE +</h2>
+            </div>
+            <div class="footer-section social">
+                <h2>TERMS & CONDITIONS +</h2>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/Nav.js"></script>
+
+  </body>
+</html>

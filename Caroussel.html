@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Swiper demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://kit.fontawesome.com/d3a9f97c9c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/Caroussel.css">
+</head>
+
+<body>
+
+    <header class="tete">
+        <nav>
+            <div class="logo"><h1><a href="Login.html">FROST</a></h1></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="Caroussel.html">TEAM</a></li>
+                <li><a href="#">LIVRAISON</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/photo1.JPG"></div>
+        <div class="swiper-slide"><img src="img/photo2.JPG"></div>
+        <div class="swiper-slide"><img src="img/photo3.JPG"></div>
+        <div class="swiper-slide"><img src="img/photo4.JPG"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>DELIVERY & RETURNS +</h2>
+        </div>
+        <div class="footer-section contact">
+            <h2>CUSTOMER CARE +</h2>
+        </div>
+        <div class="footer-section social">
+            <h2>TERMS & CONDITIONS +</h2>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/Nav.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    });
+</script>
+
+</body>
+</html>

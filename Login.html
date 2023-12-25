@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d3a9f97c9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/Login.css">
+</head>
+<body>
+    
+
+    <header class="tete">
+        <nav>
+            <div class="logo"><h1><a href="Login.html">FROST</a></h1></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="Caroussel.html">TEAM</a></li>
+                <li><a href="#">LIVRAISON</a></li>
+                <button onclick="toggleDarkMode()"><i class="fa-regular fa-moon"></i></button>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="wrapper" id="wrapper">
+
+    <div class="img1"><a href="index4.html"><img src="img/Forst.GIF"></a></div>
+    <form id="loginForm">
+        <div class="box-name">
+            <label for="name">Pseudonyme :</label>
+            <input type="text" name="name" id="name" autocomplete="off">
+        </div>
+
+        <div class="box-email">
+            <label for="email">Adresse Email : </label>
+            <input type="email" name="email" id="email" autocomplete="off">
+        </div>
+
+        <div class="box-password">
+            <label for="password">Mot de passe : </label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+
+        <div id="error-message" class="error-message"></div>
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>DELIVERY & RETURNS +</h2>
+        </div>
+        <div class="footer-section contact">
+            <h2>CUSTOMER CARE +</h2>
+        </div>
+        <div class="footer-section social">
+            <h2>TERMS & CONDITIONS +</h2>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="js/Login.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    height: 100%;
+  }
+
+header{
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: black;
+    min-height: 5vh;
+    border-bottom: 2px solid black;
+}
+
+nav {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+nav .mainMenu li a:hover {
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+nav .openMenu {
+        display: block;
+    }
+
+nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+
+.icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 10vh 0;
+}
+
+.composant{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 7vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+.titre{
+    color: #69727b;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.série1{
+    display: flex;
+    align-items: center;
+
+}
+
+.série1 img{
+    max-width: 50%;
+    height: auto;
+}
+
+.vente {
+    font-size: 20px;
+}
+
+.espace {
+    line-height: 150%;
+    color: black;
+    font-weight: bold;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    letter-spacing: 3px;
+}
+
+.vente{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+
+
+
+@media screen and (max-width: 887px) {
+    .série1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
